@@ -243,10 +243,10 @@ body
 .left_footer {
   position: fixed;
   font-size: 9px;
-  left: 10%;
+  left: 0%;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #73A900;
   color: black;
   text-align: center;
 }
@@ -257,7 +257,7 @@ body
   left: 70%;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #73A900;
   color: black;
   text-align: center;
 }
@@ -268,7 +268,7 @@ body
   left: 80%;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #73A900;
   color: black;
   text-align: center;
 }
@@ -342,4 +342,22 @@ input[type=submit]:hover {
   text-align: center;
   align-content: 20%, 10%;
   color: #73A900;
+}
+
+.journalParagraph {
+  width: 40%;
+  text-align: center;
+  color: black;
+  transform: translate(60%, 10%);
+}
+
+.volumeTitle {
+  text-align: left;
+  width: 30%;
+  transform: translate(10%, 100%);
+}
+
+.subscribeForMore {
+  bottom: 10%;
+  transform: translate(40%, 800%);
 }
