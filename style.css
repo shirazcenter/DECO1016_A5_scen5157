@@ -7,11 +7,15 @@ body, html {
 }
 
 h2 {
-  color: green;
+  color:#73A900;
+}
+h3 {
+  color: black;
 }
 
 p {
   text-align: left; 
+  color: black;
 }
 /* NAVIGATION BAR */ 
 
@@ -46,7 +50,7 @@ webpageTopnav ul {
 }
 
 li a:hover {
-  background-color: rgb(166, 225, 125);
+  background-color:#73A900;
 
 }
 
@@ -110,7 +114,7 @@ body
 
 #menuToggle a:hover
 {
-  background-color: rgb(166, 225, 125);
+  background-color: #73A900;
 }
 
 
@@ -290,7 +294,7 @@ input[type=text], select, textarea {
 
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #73A900;
   color: white;
   padding: 30px 50%;
   border: none;
@@ -319,6 +323,7 @@ input[type=submit]:hover {
 
 .row:after {
   content: "";
+  background-color: blue;
   display: table;
   clear: both;
 }
@@ -328,4 +333,13 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+
+/* JOURNAL STYLING */
+
+.journalContainer{
+  text-align: center;
+  align-content: 20%, 10%;
+  color: #73A900;
 }
