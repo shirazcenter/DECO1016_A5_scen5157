@@ -21,6 +21,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* FONTS */
 body, html {
   height: 100%;
@@ -118,7 +128,7 @@ body
   color: #cdcdcd;
 }
 
-#menuToggle
+#menuButton
 
 {
   display: block;
@@ -132,7 +142,7 @@ body
   user-select: none;
 }
 
-#menuToggle a
+#menuButton a
 {
   text-decoration: none;
   color: #232323;
@@ -140,13 +150,13 @@ body
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
+#menuButton a:hover
 {
   background-color: #73A900;
 }
 
 
-#menuToggle input
+#menuButton input
 {
   display: block;
   width: 40px;
@@ -163,7 +173,7 @@ body
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
+#menuButton span
 {
   display: none;
   width: 27px;
@@ -183,32 +193,32 @@ body
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#menuButton span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#menuButton span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
 
 
-#menuToggle input:checked ~ span
+#menuButton input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
+#menuButton input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 
-#menuToggle input:checked ~ span:nth-last-child(2)
+#menuButton input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -240,7 +250,7 @@ body
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul
+#menuButton input:checked ~ ul
 {
   
   transform: none;
@@ -255,7 +265,7 @@ body
     width: 100%;
     display: inline-grid;
   }
-  #menuToggle span{
+  #menuButton span{
     display: block;
   }
 
