@@ -13,6 +13,11 @@ h3 {
   color: black;
 }
 
+h4{
+  background-color: #73A900;
+  color: black;
+  font-size: 4vh; 
+}
 p {
   text-align: left; 
   color: black;
@@ -510,6 +515,72 @@ input[type=submit]:hover {
 }
 
 /* display value: none or pure cSS photo carousel */
+
+
+
+/* ABOUT PAGE */
+
+.aboutContainer {
+  color: rgb(0, 0, 0);
+
+
+  text-align: left;
+}
+
+.centeredAbout{
+  position: absolute;
+  top: 60%;
+  left: 60%;
+
+}
+
+.bobBrown {
+  left: 10%;
+  text-align: left;
+  width: 60%
+  text-indent:80px; 
+  position: relative;
+}
+
+
+/* Image grids */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  size: 70%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* KEEPING TEXT CENTRED - adapted from: https://www.w3schools.com/howto/howto_css_image_text.asp */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
