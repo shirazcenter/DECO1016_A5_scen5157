@@ -461,7 +461,7 @@ input[type=submit]:hover {
 }
 
 
-
+/* HOME PAGE */
 
 .homeContainer {
   color: white;
@@ -480,4 +480,22 @@ input[type=submit]:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
+}
+
+.endingDeforestation{
+    position: relative;
+    width: 50%;
+}
+
+.pilliga{
+    position: relative;
+    width: 50%;
+    text-align: right;
+    transform: translate(80%, 0%);
+
+}
+
+.keepingWatch{
+    position: relative;
+    width: 50%;
 }
