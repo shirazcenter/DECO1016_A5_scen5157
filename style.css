@@ -138,7 +138,7 @@ body
 #menuToggle span
 {
   display: none;
-  width: 2px;
+  width: 27px;
   height: 2px;
   margin-bottom: 5px;
   position: relative;
@@ -246,10 +246,15 @@ body
   left: 0%;
   bottom: 0;
   width: 100%;
+
   background-color: #73A900;
   color: black;
   text-align: center;
+  display: flex;
+  justify-content:space-between;
+  
 }
+
 
 .right_footer {
   position: fixed;
@@ -259,6 +264,7 @@ body
   width: 100%;
   background-color: #73A900;
   color: black;
+  display: flex;
   text-align: center;
 }
 
@@ -270,9 +276,12 @@ body
   width: 100%;
   background-color: #73A900;
   color: black;
+  display: flex;
   text-align: center;
 }
-
+ display issue here 
+look at flexbox 
+*/
 
 
 
@@ -429,7 +438,7 @@ input[type=submit]:hover {
 .dot {
   cursor: pointer;
   height: 7px;
-  width: px;
+  width: 7px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -499,3 +508,8 @@ input[type=submit]:hover {
     position: relative;
     width: 50%;
 }
+
+/* display value: none or pure cSS photo carousel */
+
+
+
