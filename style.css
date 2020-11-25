@@ -22,15 +22,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /* FONTS */
 body, html {
   height: 100%;
@@ -41,9 +32,11 @@ body, html {
 
 h2 {
   color:#73A900;
+  size: 2vh; 
 }
 h3 {
   color: black;
+  size: 1vh; 
 }
 
 h4{
@@ -55,7 +48,10 @@ p {
   text-align: left; 
   color: black;
 }
-/* NAVIGATION BAR */ 
+
+
+
+/* NAVIGATION BAR: adapted from (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */ 
 
 webpageTopnav ul {
 
@@ -104,19 +100,12 @@ ul {
  
 }
 ul {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
 }
-}
 
-
-
-
-
-
-/* HAMBURGER MENU */
-
+/* HAMBURGER MENU: adapted from (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */
 
 body
 
@@ -124,39 +113,36 @@ body
   margin: 0;
   padding: 0;
   
-  background: #white;
-  color: #cdcdcd;
+  background: white;
+  color: white;
 }
 
-#menuButton
+#menuToggle
 
 {
   display: block;
   position: relative;
   top: 50px;
   left: 50px;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuButton a
+#menuToggle a
 {
   text-decoration: none;
   color: #232323;
-  
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
-#menuButton a:hover
+#menuToggle a:hover
 {
   background-color: #73A900;
 }
 
 
-#menuButton input
+#menuToggle input
 {
   display: block;
   width: 40px;
@@ -164,61 +150,54 @@ body
   position: absolute;
   top: -7px;
   left: -5px;
-  
   cursor: pointer;
-  
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
-#menuButton span
+#menuToggle span
 {
   display: none;
   width: 27px;
   height: 2px;
   margin-bottom: 5px;
   position: relative;
-  
-  background: #cdcdcd;
+  background: white;
   border-radius: 0px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
-#menuButton span:first-child
+#menuToggle span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuButton span:nth-last-child(2)
+#menuToggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
 
 
-#menuButton input:checked ~ span
+#menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuButton input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 
-#menuButton input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -232,15 +211,11 @@ body
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -250,7 +225,7 @@ body
   font-size: 22px;
 }
 
-#menuButton input:checked ~ ul
+#menuToggle input:checked ~ ul
 {
   
   transform: none;
@@ -265,7 +240,7 @@ body
     width: 100%;
     display: inline-grid;
   }
-  #menuButton span{
+  #menuToggle span{
     display: block;
   }
 
@@ -317,7 +292,7 @@ body
   display: flex;
   text-align: center;
 }
- display issue here 
+ /* display issue here 
 look at flexbox 
 */
 
@@ -355,8 +330,7 @@ input[type=submit]:hover {
 .contactContainer {
   transform: translate(0%, 10%);
   border-radius: 5px;
-  text-align:center;
-  align-content: center;
+  text-align:left;
   padding: 10px;
   
 }
@@ -377,8 +351,9 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
-    width: 100%;
+    width: 60%;
     margin-top: 0;
+    float: center;
   }
 }
 
@@ -409,10 +384,9 @@ input[type=submit]:hover {
   transform: translate(40%, 800%);
 }
 
-/* SLIDESHOW */
+/* SLIDESHOW: adapted from (https://www.w3schools.com/howto/howto_js_slideshow.asp) */
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 30%;
   position: relative;
@@ -420,12 +394,10 @@ input[type=submit]:hover {
   transform: translate(50%, 0%);
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -441,18 +413,15 @@ input[type=submit]:hover {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -463,7 +432,6 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -472,7 +440,6 @@ input[type=submit]:hover {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 7px;
@@ -489,7 +456,6 @@ input[type=submit]:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -576,8 +542,7 @@ input[type=submit]:hover {
 }
 
 
-/* Image grids */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* IMAGES SIDE BY SIDE: adapted from (https://www.w3schools.com/howto/howto_css_images_side_by_side.asp) */
 .column {
   float: left;
   width: 33.33%;
@@ -585,7 +550,6 @@ input[type=submit]:hover {
   size: 70%;
 }
 
-/* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
@@ -671,8 +635,6 @@ input[type=submit]:hover {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
