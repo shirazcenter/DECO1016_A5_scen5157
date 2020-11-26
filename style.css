@@ -823,7 +823,7 @@ input[type=submit]:hover {
   
 }
 
-.popupForm {
+.homeForm {
   grid-area: Form;
   position: relative;
   bottom: 0;
