@@ -471,17 +471,69 @@ display: block;
   max-width: 30%;
   position: relative;
   margin: auto;
-  transform: translate(50%, -20%);
+  transform: translate(50%, -10%);
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.mySlides {
-  display: block;
-  border: 5px solid #73A900; 
+
+.volume1Container:hover, .volume1Container:active, .overlay {
+  border-left: 15px solid #73A900;
+  border-right: 15px solid #73A900;
+  border-top: 15px solid #73A900;
+  border-bottom: 15px solid #73A900;
+  cursor: pointer;
+  opacity: 1;
+  
+}
+
+.volume2Container:hover, .volume2Container:active {
+  border-left: 15px solid #73A900;
+  border-right: 15px solid #73A900;
+  border-top: 15px solid #73A900;
+  border-bottom: 15px solid #73A900;
+  cursor: pointer;
+  
+}
+
+.volume3Container:hover, .volume3Container:active {
+  border-left: 15px solid #73A900;
+  border-right: 15px solid #73A900;
+  border-top: 15px solid #73A900;
+  border-bottom: 15px solid #73A900;
+  cursor: pointer;
 
 }
 
+.volume5Container:hover, .volume5Container:active {
+  border-left: 15px solid #73A900;
+  border-right: 15px solid #73A900;
+  border-top: 15px solid #73A900;
+  border-bottom: 15px solid #73A900;
+  cursor: pointer;
+  
+}
 
-
+.volume6Container:hover, .volume6Container:active {
+  border-left: 15px solid #73A900;
+  border-right: 15px solid #73A900;
+  border-top: 15px solid #73A900;
+  border-bottom: 15px solid #73A900;
+  cursor: pointer;
+  
+}
 /*.text {
   color: #f2f2f2;
   font-size: 15px;
