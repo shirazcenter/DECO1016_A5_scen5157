@@ -458,7 +458,7 @@ display: block;
 
 .volumeTitle {
   text-align: left;
-  width: 30%;
+  width: 50%;
   transform: translate(20%, 100%);
   flex-direction: column;
 }
