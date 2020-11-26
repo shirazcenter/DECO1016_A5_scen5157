@@ -22,60 +22,51 @@
       </header>
 
 
-<div class="left_footer">
-  <p>Wilderness Society 2020</p>
-</div>
-
-<div class="right_footer">
-  <p>Privacy</p>
-</div>
-
-<div class="right_footer2">
-  <p>Terms & Conditions</p>
-</div>
 
 
 
 <!-- CONTACT FORM -->
 
 <div class="contactContainer">
-
-<div class="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \
-\
-">
+  <div class="">
     <h2>We love getting in touch! </h2>
     <h3></h3>
     <p>Let us know where you're based and we'll direct you to the most suitable representative.</p>
+  </div>
 
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+    <label for="country">State</label>
+     <select id="State" name="State">
+        <option value="NSW">NSW</option>
+        <option value="VIC">VIC</option>
+        <option value="WA">WA</option>
+        <option value="SA">SA</option>
+        <option value="QLD">QLD</option>
+        <option value="TAS">TAS</option>          
+        <option value="NT">NT</option>
+        <option value="ACT">ACT</option>
+      </select>
+
+    <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+      <input type="submit" value="Submit">
+  </form>
 </div>
- 
-
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">State</label>
-        <select id="State" name="State">
-          <option value="NSW">NSW</option>
-          <option value="VIC">VIC</option>
-          <option value="WA">WA</option>
-          <option value="SA">SA</option>
-          <option value="QLD">QLD</option>
-          <option value="TAS">TAS</option>
-          <option value="NT">NT</option>
-          <option value="ACT">ACT</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
 
 
-</div>
-<br>
-<br>
-<br>
-<br>
+<!-- Footer -->
+
+    <div class="left_footer">
+      <p>Wilderness Society 2020</p>
+      <p> Privacy </p>
+      <p> Terms & Conditions </p>
+    </div>
+
   </body>
 </html>
