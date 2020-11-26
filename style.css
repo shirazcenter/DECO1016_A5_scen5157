@@ -69,7 +69,6 @@ p {
 .topnav a:hover {
   background-color: #73A900;
   color: black;
-  width: 10%;
 }
 
 .topnav a.active {
@@ -686,6 +685,7 @@ margin-left: 50px;
 
 .row {
   display: flex;
+  color: #000;
 }
 
 .column {
