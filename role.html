@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-     <header class="header">
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active">Home</a>
-          <a href="about.html">About</a>
-          <a href="role.html">Your role</a>
-          <a href="journal.html">Journal</a>
-          <a href="contact.html">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+	<header class="header">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Home</a>
+			<a href="about.html">About</a>
+			<a href="role.html">Your role</a>
+			<a href="journal.html">Journal</a>
+			<a href="contact.html">Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
           </a>
-        </div>
-      </header>
-
-
-
-
-<div class="left_footer">
-  <p>Wilderness Society 2020</p>
-</div>
-
-<div class="right_footer">
-  <p>Privacy</p>
-</div>
-
-<div class="right_footer2">
-  <p>Terms & Conditions</p>
-</div>
+    </div>
+  </header>
 
 
 
     <div class="roleContainer">
-        <figure>
-          <img src="images/roleBackground.jpg" alt="Wilderness Society Volunteers, Canberra 2019." style="width:100%;"/>
-        </figure>
+      <figure>
+        <img src="images/roleBackground.jpg" alt="Wilderness Society Volunteers, Canberra 2019." style="width:100%;"/>
+      </figure>
 
       <div class="centeredRole">
         <h2 >Join thousands of Australians who share your passion for change.</h2> <br><br>
-<h1>There are plenty of ways to make things happen, supporting the life we all depend on. </h1>
-          <button class="donateButton">Join us</button>
-  
+        <h1>There are plenty of ways to make things happen, supporting the life we all depend on. </h1>
 
+        <button class="donateButton">Join us</button>
       </div>
-      
     </div>
 
 
@@ -60,50 +46,59 @@
 <h5 style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; margin-top:2.53em"> Make a change. </h5>
 
 <div class = "popupForm" id = "subscribeForm">
-  <form action = "subscribeButton">
-  <div class="formContainer">
-    
-    <h2>Become a vital part in our movement!</h2>
-    <p>Use your passion to create a meaningful impact.</p>
+    <form action = "subscribeButton">
+      <div class="formContainer">
+        <h2>Become a vital part in our movement!</h2>
+        <p>Use your passion to create a meaningful impact.</p>
+      </div>
+
+      <div class="formContainer" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+        <input type="text" placeholder="State" name="State" required>
+        <input type="text" placeholder="Postcode" name="postcode" required>
+          
+          <h3> How would you like to help? </h3> 
+          <p>Select all that apply </p>
+
+          <label class="checkContainer"> 
+            <p> Leave a gift in your will </p> 
+            <input type="checkbox"  checked="checked">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkContainer"><p> Fundraise for us </p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkContainer"><p> Attend an event </p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="checkContainer"><p> Sign a petition </p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+        <br>
+        <p>We'll reach out to you directly in the next 24 hours to discuss your choices further. </p>
+      </div>
+
+      <input type="submit" value="Join us!">
+    </div>
   </div>
-
-  <div class="formContainer" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <input type="text" placeholder="State" name="State" required>
-    <input type="text" placeholder="Postcode" name="postcode" required>
-        
-         <h3> How would you like to help? </h3> <p>Select all that apply </p>
-<label class="checkContainer"> <p> Leave a gift in your will </p>
-  <input type="checkbox"  checked="checked">
- 
-  <span class="checkmark"></span>
-</label>
-
-<label class="checkContainer"><p> Fundraise for us </p>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="checkContainer"><p> Attend an event </p>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label class="checkContainer"><p> Sign a petition </p>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<br>
-<p>We'll reach out to you directly in the next 24 hours to discuss your choices further. </p>
-  </div>
-
-
-    <input type="submit" value="Join us!">
-  </div>
-  </div>
-  </div>
+</div>
 </form>
+
+<!-- Footer -->
+
+    <div class="left_footer">
+      <p>Wilderness Society 2020</p>
+      <p> Privacy </p>
+      <p> Terms & Conditions </p>
+    </div>
 
   </body>
 </html>

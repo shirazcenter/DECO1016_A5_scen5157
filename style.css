@@ -637,7 +637,7 @@ display: block;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  background-color: green;
+  background-color: #73A900;
   cursor: pointer;
 }
 
@@ -654,7 +654,7 @@ display: block;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  background-color: green;
+  background-color: #73A900;
   cursor: pointer;
 }
 
@@ -727,7 +727,7 @@ margin-left: 50px;
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #73A900;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -811,7 +811,7 @@ input[type=checkbox] {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #73A900;
   color: white;
   border: none;
   padding: 30, 40px;
