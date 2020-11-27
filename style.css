@@ -364,7 +364,7 @@ input[type=submit]:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-30%, -50%);
+  transform: translate(-30%, -20%);
 }
 
 .endingDeforestation{
@@ -464,7 +464,7 @@ margin-left: 50px;
   position: flex;
   top: 50%;
   left: 50%;
-  transform: translate(0%, -160%);
+  transform: translate(0%, -130%);
 
 }
 /* IMAGES SIDE BY SIDE: adapted from (https://www.w3schools.com/howto/howto_css_images_side_by_side.asp) */
